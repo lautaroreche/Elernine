@@ -53,6 +53,7 @@
 
 .primeraSeccion .tituloPrimeraSeccion {
   color: white;
+  margin-bottom: 1rem;
 }
 
 /*Segunda sección*/
@@ -159,6 +160,10 @@
 
 .terceraSeccion .tituloTerceraSeccion {
   color: white;
+}
+
+.terceraSeccion .botonFormulario {
+  max-width: 50%;
 }
 
 /*Footer*/
