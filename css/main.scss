@@ -3,15 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Helvetica;
-    .botonVioleta{
-        background: blueviolet;
-        border-color: blueviolet;
-    }
-    .botonVioleta:hover{
-        background: rgb(138, 90, 226);
-        border-color: rgb(138, 90, 226);
-        transition: 0.5s;
-    }
 }
 
 /*Header*/
@@ -38,6 +29,15 @@
     .tituloPrimeraSeccion{
         color: white;
         margin-bottom: 1rem;
+    }
+    .botonVioleta{
+        background: blueviolet;
+        border-color: blueviolet;
+    }
+    .botonVioleta:hover{
+        background: rgb(138, 90, 226);
+        border-color: rgb(138, 90, 226);
+        transition: 0.5s;
     }
 }
 
@@ -101,10 +101,16 @@
         border-color: rgb(100, 100, 100);;
         color: white;
     }
-    .botonFormulario{
+    .botonVioleta, .botonServicio, .botonFormulario{
         width: 100%;
-        @extend .botonVioleta;
+        background: blueviolet;
+        border-color: blueviolet;
     }
+    .botonVioleta:hover, .botonServicio:hover, .botonFormulario:hover{
+        background: rgb(138, 90, 226);
+        border-color: rgb(138, 90, 226);
+        transition: 0.5s;
+    } 
 }
 
 .terceraSeccion{
@@ -146,7 +152,7 @@ footer{
 
 /*Media query menores a 767px*/
 @media screen and (max-width: 767px){
-    #botonServicioEspecial{
+    .botonServicio{
         display: none;
     }
     #badgeEspecial{
@@ -161,6 +167,9 @@ footer{
 @media screen and (max-width: 576px){
     .ubicacion, .modalidadPosicion, .paisPosicion, .tituloModalidadPosicion, .tituloPaisPosicion, .imagenServicio{
         display: none;
+    }
+    .botonServicio{
+        display: block;
     }
 }
 

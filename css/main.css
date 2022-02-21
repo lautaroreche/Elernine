@@ -7,18 +7,6 @@
   font-family: Helvetica;
 }
 
-* .botonVioleta, * .segundaSeccion .botonFormulario, .segundaSeccion * .botonFormulario {
-  background: blueviolet;
-  border-color: blueviolet;
-}
-
-* .botonVioleta:hover, * .segundaSeccion .botonFormulario:hover, .segundaSeccion * .botonFormulario:hover {
-  background: #8a5ae2;
-  border-color: #8a5ae2;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 /*Header*/
 .navbar {
   background-color: blueviolet;
@@ -54,6 +42,18 @@
 .primeraSeccion .tituloPrimeraSeccion {
   color: white;
   margin-bottom: 1rem;
+}
+
+.primeraSeccion .botonVioleta {
+  background: blueviolet;
+  border-color: blueviolet;
+}
+
+.primeraSeccion .botonVioleta:hover {
+  background: #8a5ae2;
+  border-color: #8a5ae2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /*Segunda sección*/
@@ -140,8 +140,17 @@
   color: white;
 }
 
-.segundaSeccion .botonFormulario {
+.segundaSeccion .botonVioleta, .segundaSeccion .botonServicio, .segundaSeccion .botonFormulario {
   width: 100%;
+  background: blueviolet;
+  border-color: blueviolet;
+}
+
+.segundaSeccion .botonVioleta:hover, .segundaSeccion .botonServicio:hover, .segundaSeccion .botonFormulario:hover {
+  background: #8a5ae2;
+  border-color: #8a5ae2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .terceraSeccion {
@@ -200,7 +209,7 @@ footer .elementosDelFooter a {
 
 /*Media query menores a 767px*/
 @media screen and (max-width: 767px) {
-  #botonServicioEspecial {
+  .botonServicio {
     display: none;
   }
   #badgeEspecial {
@@ -215,6 +224,9 @@ footer .elementosDelFooter a {
 @media screen and (max-width: 576px) {
   .ubicacion, .modalidadPosicion, .paisPosicion, .tituloModalidadPosicion, .tituloPaisPosicion, .imagenServicio {
     display: none;
+  }
+  .botonServicio {
+    display: block;
   }
 }
 
