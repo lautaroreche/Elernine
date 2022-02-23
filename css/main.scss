@@ -5,9 +5,13 @@
     font-family: Helvetica;
 }
 
+/*variables*/
+$color-principal: blueviolet;
+$color-secundario: rgb(138, 90, 226);
+
 /*Header*/
 .navbar{
-    background-color: blueviolet;
+    background-color: $color-principal;
     .elernine{
         width: 90px;
         height: 30px;
@@ -31,12 +35,12 @@
         margin-bottom: 1rem;
     }
     .botonVioleta{
-        background: blueviolet;
-        border-color: blueviolet;
+        background: $color-principal;
+        border-color: $color-principal;
     }
     .botonVioleta:hover{
-        background: rgb(138, 90, 226);
-        border-color: rgb(138, 90, 226);
+        background: $color-secundario;
+        border-color: $color-secundario;
         transition: 0.5s;
     }
 }
@@ -103,12 +107,12 @@
     }
     .botonVioleta, .botonServicio, .botonFormulario{
         width: 100%;
-        background: blueviolet;
-        border-color: blueviolet;
+        background: $color-principal;
+        border-color: $color-principal;
     }
     .botonVioleta:hover, .botonServicio:hover, .botonFormulario:hover{
-        background: rgb(138, 90, 226);
-        border-color: rgb(138, 90, 226);
+        background: $color-secundario;
+        border-color: $color-secundario;
         transition: 0.5s;
     } 
 }
@@ -159,7 +163,7 @@ footer{
         display: none;
     }
     .tituloServicio{
-        border-bottom: 3px solid blueviolet;
+        border-bottom: 3px solid $color-principal;
     }
 }
 
