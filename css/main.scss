@@ -6,15 +6,15 @@
 }
 
 /*variables*/
-$color-principal: blueviolet;
+$color-principal: rgb(138, 43, 226);
 $color-secundario: rgb(138, 90, 226);
 
 /*Header*/
 .navbar{
     background-color: $color-principal;
     .elernine{
-        width: 90px;
-        height: 30px;
+        width: 60px;
+        height: 40px;
     }
     .elernine:hover{
         transform: scale(1.03);
